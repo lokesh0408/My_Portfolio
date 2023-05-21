@@ -38,8 +38,10 @@ const Contact = () => {
     } else {
       emailjs
         .send(
-          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_omsz6bj",
+//           import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        "template_hbz8oeo",
+//           import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
           {
             from_name: form.name,
             to_name: "Lokesh",
@@ -47,8 +49,8 @@ const Contact = () => {
             to_email: "lokeshjindal997@gmail.com",
             message: form.message,
           },
-
-          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      "Txtcg3FZLPUVgLpSM"
+//           import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
         )
         .then(
           () => {
